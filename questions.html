@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+</body>
+</html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Movie Recommendation Quiz</title>
+    <style>
+        body {
+    /* Set background image */
+    background-image: url(https://i.pinimg.com/564x/16/61/b3/1661b3d2f583859b7a954d3fc67d2c94.jpg);
+    /* Center and cover the background image */
+    background-position: center;
+    background-size: cover;
+    /* Apply remaining styles */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Apply styles to the form */
+#quiz-container {
+    margin-bottom: 20px;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-image: url(https://i.pinimg.com/564x/16/61/b3/1661b3d2f583859b7a954d3fc67d2c94.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form title */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+/* Style the label text */
+label {
+    font-weight: bold;
+}
+
+/* Style the radio buttons and their labels */
+div {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style the form button */
+button {
+    height: 50px;
+    width: 40%;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+/* Optional: Center the form on the page */
+#quiz-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Content Recommendation Quiz</h1>
+        <form id="quiz-form">
+            <div>
+                <label>1. I strive for perfection *</label>
+                <div>
+                    <input type="radio" name="q1" value="Inaccurate" id="q1-Inaccurate">
+                    <label for="q1-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="Neutral" id="q1-Neutral">
+                    <label for="q1-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="Accurate" id="q1-Accurate">
+                    <label for="q1-Accurate">Accurate</label>
+                </div>
+            </div>
+        
+            <div>
+                <label>2. I work hard to be helpful to others *</label>
+                <div>
+                    <input type="radio" name="q2" value="inaccurate" id="q2-inaccurate">
+                    <label for="q2-inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="neutral" id="q2-neutral">
+                    <label for="q2-neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="accurate" id="q2-accurate">
+                    <label for="q2-accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>3. It is important to me that other people like me *</label>
+                <div>
+                    <input type="radio" name="q3" value="Inaccurate" id="q3-Inaccurate">
+                    <label for="q3-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="Neutral" id="q3-Neutral">
+                    <label for="q3-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="Accurate" id="q3-Accurate">
+                    <label for="q3-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>4. It is important to me to achieve great things *</label>
+                <div>
+                    <input type="radio" name="q4" value="Inaccurate" id="q4-Inaccurate">
+                    <label for="q4-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="Neutral" id="q4-Neutral">
+                    <label for="q4-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="Accurate" id="q4-Accurate">
+                    <label for="q4-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>5. I make more significant contributions than the average person *</label>
+                <div>
+                    <input type="radio" name="q5" value="Inaccurate" id="q5-Inaccurate">
+                    <label for="q5-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q5" value="Neutral" id="q5-Neutral">
+                    <label for="q5-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q5" value="Accurate" id="q5-Accurate">
+                    <label for="q5-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>6. I feel my emotions very deeply *</label>
+                <div>
+                    <input type="radio" name="q6" value="Inaccurate" id="q6-Inaccurate">
+                    <label for="q6-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q6" value="Neutral" id="q6-Neutral">
+                    <label for="q6-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q6" value="Accurate" id="q6-Accurate">
+                    <label for="q6-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>7. I have a sense that other people will never truly understand me *</label>
+                <div>
+                    <input type="radio" name="q7" value="Inaccurate" id="q7-Inaccurate">
+                    <label for="q7-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q7" value="Neutral" id="q7-Neutral">
+                    <label for="q7-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q7" value="Accurate" id="q7-Accurate">
+                    <label for="q7-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>8. I have a sense that other people will never truly understand me *</label>
+                <div>
+                    <input type="radio" name="q8" value="Inaccurate" id="q8-Inaccurate">
+                    <label for="q8-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q8" value="Neutral" id="q8-Neutral">
+                    <label for="q8-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q8" value="Accurate" id="q8-Accurate">
+                    <label for="q8-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>9. I am prepared for any disaster *</label>
+                <div>
+                    <input type="radio" name="q9" value="Inaccurate" id="q9-Inaccurate">
+                    <label for="q9-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q9" value="Neutral" id="q9-Neutral">
+                    <label for="q9-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q9" value="Accurate" id="q9-Accurate">
+                    <label for="q9-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>10. It is important to me to avoid pain and suffering at all times *</label>
+                <div>
+                    <input type="radio" name="q10" value="Inaccurate" id="q10-Inaccurate">
+                    <label for="q10-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q10" value="Neutral" id="q10-Neutral">
+                    <label for="q10-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q10" value="Accurate" id="q10-Accurate">
+                    <label for="q10-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>11. I seek out experiences that I know will make me feel happy or excited *</label>
+                <div>
+                    <input type="radio" name="q11" value="Inaccurate" id="q11-Inaccurate">
+                    <label for="q11-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q11" value="Neutral" id="q11-Neutral">
+                    <label for="q11-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q11" value="Accurate" id="q11-Accurate">
+                    <label for="q11-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>12. I seek out experiences that I know will make me feel happy or excited *</label>
+                <div>
+                    <input type="radio" name="q12" value="Inaccurate" id="q12-Inaccurate">
+                    <label for="q12-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q12" value="Neutral" id="q12-Neutral">
+                    <label for="q12-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q12" value="Accurate" id="q12-Accurate">
+                    <label for="q12-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>13. I am not afraid to tell someone when I think they are wrong *</label>
+                <div>
+                    <input type="radio" name="q13" value="Inaccurate" id="q13-Inaccurate">
+                    <label for="q13-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q13" value="Neutral" id="q13-Neutral">
+                    <label for="q13-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q13" value="Accurate" id="q13-Accurate">
+                    <label for="q13-Accurate">Accurate</label>
+                </div>
+            </div>
+
+            <div>
+                <label>14. I am not afraid to tell someone when I think they are wrong *</label>
+                <div>
+                    <input type="radio" name="q14" value="Inaccurate" id="q14-Inaccurate">
+                    <label for="q14-Inaccurate">Inaccurate</label>
+                </div>
+                <div>
+                    <input type="radio" name="q14" value="Neutral" id="q14-Neutral">
+                    <label for="q14-Neutral">Neutral</label>
+                </div>
+                <div>
+                    <input type="radio" name="q14" value="Accurate" id="q14-Accurate">
+                    <label for="q14-Accurate">Accurate</label>
+                </div>
+            </div>
+        
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
